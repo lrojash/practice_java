@@ -21,7 +21,7 @@ public class Email {
 		
 		// method to ask for department
 		this.department = setDepartment();
-		System.out.println("Deparment: " + this.department);
+//		System.out.println("Deparment: " + this.department);
 		
 		// method that returns a random password
 		this.password = randPassword(defaultPasswordLength);
@@ -29,7 +29,7 @@ public class Email {
 		
 		// combine element to create email
 		email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
-		System.out.println("Your email: " + email);
+//		System.out.println("Your email: " + email);
 	}
 	// ask for department and return a department
 	private String setDepartment() {
@@ -76,4 +76,11 @@ public class Email {
 	public int getMailboxCapacity() {return mailboxCapacity; };
 	public String getAltEmail() {return altEmail;};
 	public String getPassword() {return password;};
+	
+	// method to show all info 
+	public String showInfo() {
+		return "DISPLAY NAME: " + firstName + lastName + 
+				"\nCompany Email: " + email + 
+				"\nMailbox Capacity: " + mailboxCapacity + "mb";
+	}
 }
