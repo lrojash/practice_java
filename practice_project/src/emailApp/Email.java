@@ -7,11 +7,12 @@ public class Email {
 	private String lastName;
 	private String password;
 	private String department;
-	private int mailboxCapacity;
+	private int mailboxCapacity = 500;
 	private String altEmail;
 	private int defaultPasswordLength = 10;
 	private String email;
 	private String companySuffix  = "coolcompany.com";
+
 	// constructor takes in first and last name 
 	public Email(String firstName, String lastName) {
 		this.firstName = firstName;
@@ -59,8 +60,16 @@ public class Email {
 		return new String(password);	
 	}
 	// set mailbox capacity
-	
+	public void setMailboxCapacity(int capacity) {
+		this.mailboxCapacity = capacity;
+	}
 	// set alt email
+	public void setAltEmail(String altEmail) {
+		this.altEmail = altEmail;
+	}
 	
 	// change password
+	public void changePassword(String password) {
+		this.password = password;
+	}
 }
