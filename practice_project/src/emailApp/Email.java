@@ -72,4 +72,8 @@ public class Email {
 	public void changePassword(String password) {
 		this.password = password;
 	}
+	// get methods
+	public int getMailboxCapacity() {return mailboxCapacity; };
+	public String getAltEmail() {return altEmail;};
+	public String getPassword() {return password;};
 }

@@ -9,6 +9,8 @@ public class EmailApp {
 //		em1.changePassword(password);
 //		em1.setAltEmail(altEmail);
 //		em1.setMailboxCapacity(capacity);
+// get methods
+//		em1.getAltEmail();
 	}
 
 }
